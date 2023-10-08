@@ -100,3 +100,59 @@ nav li a {
 .article::after {
 	clear: left;
 }
+
+.boncon{
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	background-image: url(img/bonfire.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+ 
+}
+.boncon:hover::after{
+	transform: translateY(0);
+}
+
+
+.boncon::after{
+	content: "Esto es Dark Souls.";
+	font-size: 2rem;
+	color: white;
+	background-color: #16456198;
+	position: absolute;
+	inset: 0;
+	display: grid;
+	place-items: center;
+	transform: translateY(100%);
+	transition: all .3s ease;
+}
+
+.spaciato{
+	height: 15px;
+}
+footer{
+	height: 250px;
+	background-color: #333333;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.ftdiv{
+	width: 33.3%;
+	display: flex;
+	justify-content: center;
+	text-align: left;
+}
+.bottom{
+	color: white;
+	padding: 3px;
+	margin: 3px;
+}
+
+.ftimg{
+	height: 150px;
+	width: 150px;
+}
